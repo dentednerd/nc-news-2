@@ -12,7 +12,6 @@ class TopicPage extends React.Component {
 
   render () {
     if (!this.props.articlesByTopic) return <p>No articles!</p>;
-    console.log('Topic > props', this.props);
     return (
       <div>
         <WhiteTitle>{this.props.match.params.topic_id}</WhiteTitle>

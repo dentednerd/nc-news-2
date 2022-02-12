@@ -12,7 +12,6 @@ class Home extends React.Component {
 
   render () {
     if (!this.props.allArticles) return <p>No articles!</p>;
-    console.log('Home > props: ', this.props);
     return (
       <React.Fragment>
         <MostRecent articles={this.props.allArticles} />

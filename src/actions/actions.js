@@ -57,7 +57,6 @@ export function fetchArticlesByTopicRequest () {
 }
 
 export function fetchArticlesByTopicSuccess (articles) {
-  console.log('articles by topic: ', articles);
   return {
     type: types.FETCH_ARTICLES_BY_TOPIC_SUCCESS,
     payload: articles
