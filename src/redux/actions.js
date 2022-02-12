@@ -39,10 +39,12 @@ export function fetchArticlesError (error) {
 // fetchArticlesByTopic
 export function fetchArticlesByTopic (topic) {
   return function (dispatch) {
+    console.log({ topic })
     dispatch(fetchArticlesByTopicRequest(topic));
     axios.get(`${ROOT}/articles?topic=${topic}`)
-      .then(res => {
-        dispatch(fetchArticlesByTopicSuccess(res.data.articles));
+    .then(res => {
+        const articlesByTopic = res.data.articles;
+        dispatch(fetchArticlesByTopicSuccess(articlesByTopic));
       })
       .catch(err => {
         dispatch(fetchArticlesByTopicError(err));

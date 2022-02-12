@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import * as actions from '../../actions/actions';
+import * as actions from '../../redux/actions';
 
 const Form = styled.form`
 display: flex;
@@ -55,7 +55,7 @@ class NewComment extends React.Component {
       </Form>
     );
   }
-  
+
   handleChange (field, e) {
     e.preventDefault();
     const newState = Object.assign({}, this.state, {

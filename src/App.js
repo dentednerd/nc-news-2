@@ -6,9 +6,11 @@ import Home from './components/pages/Home';
 import ArticlePage from './components/pages/ArticlePage';
 import TopicPage from './components/pages/TopicPage';
 import UserPage from './components/pages/UserPage';
+import About from './components/pages/About';
 
 import Navbar from './components/organisms/Navbar';
 import Sidebar from './components/organisms/Sidebar';
+import Footer from './components/organisms/Footer';
 import './style.css';
 
 const Main = styled('main')`
@@ -31,12 +33,14 @@ const App = () => (
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/articles/:article_id' component={ArticlePage} />
-          <Route path='/topics/:topic_id' component={TopicPage} />
+          <Route path='/topics/:topic' component={TopicPage} />
           <Route path='/users/:username' component={UserPage} />
+          <Route path='/about' component={About} />
         </Switch>
       </div>
       <Sidebar />
     </Main>
+    <Footer />
   </div>
 );
 

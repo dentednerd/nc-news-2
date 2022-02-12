@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-import * as actions from '../../actions/actions';
+import * as actions from '../../redux/actions';
 import ArticleText from '../atoms/ArticleText';
 import CommentList from '../organisms/CommentList';
 import VoteAndComment from '../organisms/VoteAndComment';

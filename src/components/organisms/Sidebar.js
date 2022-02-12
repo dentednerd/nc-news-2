@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import dayjs from 'dayjs';
-import * as actions from '../../actions/actions';
+import * as actions from '../../redux/actions';
 
 const StyledSidebar = styled.aside`
   display: flex;

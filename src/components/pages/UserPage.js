@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import * as actions from '../../actions/actions';
+import * as actions from '../../redux/actions';
 import Profile from '../organisms/Profile';
 import CommentList from '../organisms/CommentList';
 import MostPopular from '../organisms/MostPopular';

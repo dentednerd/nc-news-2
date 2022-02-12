@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MostRecent from '../organisms/MostRecent';
 import MostPopular from '../organisms/MostPopular';
-import * as actions from '../../actions/actions';
+import * as actions from '../../redux/actions';
 
 class Home extends React.Component {
   componentDidMount () {

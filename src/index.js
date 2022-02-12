@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import { createBrowserHistory } from 'history';
-import reducer from './reducer/reducer';
+import reducer from './redux/reducer';
 import App from './App';
 
 const store = createStore(reducer, applyMiddleware(thunk));
